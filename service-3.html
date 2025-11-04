@@ -192,12 +192,12 @@
     <div class="container"><div class="row">
         <div class="col-12 col-lg-7">
             <h4 class="heading text-center text-lg-left">GET IN TOUCH</h4>
-            <form class="row contact-form wow fadeInLeft" id="contact-form-data">
+            <form class="row contact-form wow fadeInLeft" id="contact-form-data" action="https://formspree.io/f/xgvpjjkn" method="POST">
                 <div class="col-sm-12" id="result"></div>
-                <div class="col-12"><input type="text" name="userName" placeholder="Your Name" class="form-control"></div>
-                <div class="col-12"><input type="email" name="userEmail" placeholder="Email Address *" class="form-control"></div>
-                <div class="col-12"><textarea class="form-control" name="userMessage" rows="6" placeholder="Your Message"></textarea></div>
-                <div class="col-12"><a href="javascript:void(0);" class="btn yellow-btn rounded-pill w-100 contact_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> Send Message<span></span><span></span><span></span><span></span><span></span></a></div>
+                <div class="col-12"><input type="text" name="name" placeholder="Your Name" class="form-control" required></div>
+                <div class="col-12"><input type="email" name="email" placeholder="Email Address *" class="form-control" required></div>
+                <div class="col-12"><textarea class="form-control" name="message" rows="6" placeholder="Your Message" required></textarea></div>
+                <div class="col-12"><button type="submit" class="btn yellow-btn rounded-pill w-100">Send Message<span></span><span></span><span></span><span></span><span></span></button></div>
             </form>
         </div>
         <div class="col-12 col-lg-5 text-center text-lg-left position-relative">
